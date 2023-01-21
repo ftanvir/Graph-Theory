@@ -16,7 +16,7 @@ bool dfs(int source, int parent) {
             return true;
         }
 
-        isCycle |= dfs(child, source);
+        isCycle |= dfs(child, source);  //storing final result as true with or operation. if any condition return true;
     }
     return isCycle;
 }
